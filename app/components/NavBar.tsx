@@ -10,7 +10,7 @@ function NavBar() {
   };
 
   return (
-    <div className='w-96 container md:w-full md:mx-auto bg-black dark:bg-slate-400 mt-5 rounded-3xl'>
+    <div className='w-96 container md:w-full md:mx-auto bg-black mt-5 rounded-3xl'>
       <div className='flex justify-between items-center p-2'>
         <div className='flex items-center '>
           <div className='md:hidden'>
