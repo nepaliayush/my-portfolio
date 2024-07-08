@@ -4,7 +4,7 @@ function Landing() {
   return (
     <div className="mx-4  md:mx-auto mt-5 flex flex-col items-center md:flex-row">
       <div className="w-96 md:w-1/2 flex justify-center md:justify-center mb-5 md:mb-0">
-        <Image src="ayushnepali1.png" alt="Photo" width={500}
+        <Image src="/ayushnepali1.png" alt="Photo" width={500}
           height={500}
         />
       </div>
