@@ -8,13 +8,12 @@ import Projects from "./components/Projects";
 
 export default function Home() {
   return (
-    <main className="flex  flex-col items-center justify-between p-5">
-      
-      <Landing/>
-      <Projects/>
-      <AboutMe/>
-      <Experience/>
-      <Contact />
+    <main className="flex flex-col justify-between p-5">
+      <section id="home"><Landing/></section>
+      <section id="projects"><Projects/></section>
+      <section id="about-me"><AboutMe/></section>
+      <section id="experience"><Experience/></section>
+      <section id="contact"><Contact /></section>
     </main>
   );
 }

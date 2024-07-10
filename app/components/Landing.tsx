@@ -1,26 +1,35 @@
-import React from 'react'
-import Image from 'next/image'
+import React from 'react';
+import Image from 'next/image';
 
 function Landing() {
   return (
-    <div className='container mx-auto'>
-      <div className='mx-4 md:mx-auto mt-5 flex flex-col md:flex-row'>
-      <div className='w-full md:w-full flex justify-center md:justify-center mb-5 md:mb-0 order-2 md:order-1'>
-        <Image 
+    <div className='flex flex-col md:flex-row h-[calc(100vh-80px)]'> {/* Adjust height to account for NavBar */}
+      {/* Left section for image */}
+      <div className='w-full md:w-1/2 relative h-1/2 md:h-full'>
+        <Image
           src='/ayushnepali1.png'
-          alt="Photo" 
-          width={500}
-          height={500}
+          alt="Ayush Nepali"
+          layout="fill"
+          objectFit="contain"
         />
       </div>
-      <div className='w-full md:w-1/2 flex flex-col justify-center items-center text-center order-2 md:order-2'>
-        <h1 className='text-4xl font-bold text-gray-900 mb-4 animate-fade-in-up'>Ayush Nepali</h1>
-        <p className='text-lg text-gray-600 animate-fade-in-up delay-200'>Software Engineer</p>
+      
+      {/* Right section for text */}
+      <div className='w-full md:w-1/2 flex flex-col justify-center items-center p-4 md:p-8'>
+        <div className='max-w-md text-center'>
+          <h1 className='text-3xl md:text-5xl font-bold text-gray-900 mb-2 md:mb-4 animate-fade-in-up'>
+            Hi, I'm Ayush Nepali
+          </h1>
+          <p className='text-lg md:text-2xl text-gray-600 mb-4 md:mb-8 animate-fade-in-up delay-200'>
+            Software Engineer 
+          </p>
+          <button className='bg-black text-white px-4 md:px-6 py-2 rounded-full hover:bg-gray-800 transition duration-300'>
+            Explore More
+          </button>
+        </div>
       </div>
-      </div>
-    
     </div>
-  )
+  );
 }
 
-export default Landing
+export default Landing;

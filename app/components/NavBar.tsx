@@ -1,6 +1,7 @@
 'use client';
 
 import { useState, useEffect } from 'react';
+import Link from 'next/link';
 
 function NavBar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -21,11 +22,22 @@ function NavBar() {
     setIsOpen(!isOpen);
   };
 
+  const navItems = [
+    { name: 'Home', href: '/' },
+    { name: 'Projects', href: '/#projects' },
+    { name: 'About Me', href: '/#about-me' },
+    { name: 'Experience', href: '/experience' },
+    { name: 'Resume', href: '/resume' },
+    { name: 'Contact', href: '/contact' },
+  ];
+
   return (
     <div className='container mx-auto px-4'>
-      <div className='bg-black mt-5 rounded-3xl'>
+      <div className='bg-black mt-2 rounded-3xl'>
         <div className='flex justify-between items-center p-2'>
-          <a href='#' className='text-white text-xl z-50'>An</a>
+          <Link href='/'>
+            
+          </Link>
           <div className='md:hidden z-50'>
             <button
               onClick={toggleMenu}
@@ -70,23 +82,60 @@ function NavBar() {
               </button>
             </div>
             <ul className='flex flex-col items-center justify-center flex-grow'>
-              {['Home', 'Projects', 'About Me', 'Experience', 'Resume', 'Contact'].map((item) => (
-                <li key={item} className='py-2'>
-                  <a href='#' className='text-black hover:text-gray-600 text-2xl' onClick={toggleMenu}>
-                    {item}
-                  </a>
-                </li>
-              ))}
+            <li  className='py-1 px-2'>
+                 <Link href="/home">
+                  <p className='text-slate-900 text-xl hover:text-slate-800'>Home</p>
+                </Link>
+              </li>
+              <li  className='py-1 px-2'>
+                 <Link href="/about">
+                  <p className='text-slate-900 text-xl hover:text-slate-800'>Projects</p>
+                </Link>
+              </li>
+              <li  className='py-1 px-2'>
+                 <Link href="/about">
+                  <p className='text-slate-900 text-xl hover:text-slate-800'>About me</p>
+                </Link>
+              </li>
+              <li  className='py-1 px-2'>
+                 <Link href="/about">
+                  <p className='text-slate-900 text-xl hover:text-slate-800'>Resume</p>
+                </Link>
+              </li>
+              <li  className='py-1 px-2'>
+                 <Link href="/about">
+                  <p className='text-slate-900 text-xl hover:text-slate-800'>Contact</p>
+                </Link>
+              </li>
             </ul>
           </div>
           <ul className='hidden md:flex'>
-            {['Home', 'Projects', 'About Me', 'Experience', 'Resume', 'Contact'].map((item) => (
-              <li key={item} className='py-1 px-2'>
-                <a href='#' className='hover:text-gray-300 text-white text-sm sm:text-base md:text-lg lg:text-xl'>
-                  {item}
-                </a>
+        
+              <li  className='py-1 px-2'>
+                 <Link href="/home">
+                  <p className='text-white text-xl hover:text-slate-300'>Home</p>
+                </Link>
               </li>
-            ))}
+              <li  className='py-1 px-2'>
+                 <Link href="/#projects">
+                  <p className='text-white text-xl hover:text-slate-300'>Projects</p>
+                </Link>
+              </li>
+              <li  className='py-1 px-2'>
+                 <Link href="/#about-me">
+                  <p className='text-white text-xl hover:text-slate-300'>About me</p>
+                </Link>
+              </li>
+              <li  className='py-1 px-2'>
+                 <Link href="/#experience">
+                  <p className='text-white text-xl hover:text-slate-300'>Resume</p>
+                </Link>
+              </li>
+              <li  className='py-1 px-2'>
+                 <Link href="/about">
+                  <p className='text-white text-xl hover:text-slate-300'>Contact</p>
+                </Link>
+              </li>
           </ul>
         </div>
       </div>
