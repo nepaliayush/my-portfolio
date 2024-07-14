@@ -9,7 +9,7 @@ function Contact() {
         <div className='w-full md:w-1/2 mx-auto'>
     
         <p className="p-5 text-lg text-center mb-8 md:text-2xl">
-    "Let's connect! Explore my portfolio and let's discuss how we can collaborate."
+        &quot Let &apos s connect! Explore my portfolio and let &apos s discuss how we can collaborate. &quot 
     <br />
     Thank You
 </p>

@@ -18,7 +18,7 @@ function Landing() {
       <div className='w-full md:w-1/2 flex flex-col justify-center items-center p-4 md:p-8'>
         <div className='max-w-md text-center'>
           <h1 className='text-3xl md:text-5xl font-bold text-gray-900 mb-2 md:mb-4 animate-fade-in-up'>
-            Hi, I'm Ayush Nepali
+            Hi &lsquo I &apos am Ayush Nepali
           </h1>
           <p className='text-lg md:text-2xl text-gray-600 mb-4 md:mb-8 animate-fade-in-up delay-200'>
             Software Engineer 
