@@ -22,7 +22,7 @@ function Landing() {
             Hi&lsquo; I am Ayush Nepali
           </h1>
           <p className='text-lg md:text-2xl text-gray-600 mb-4 md:mb-8 animate-fade-in-up delay-200'>
-            Software Engineer
+           Junior Software Engineer
           </p>
           <button className='bg-black text-white px-4 md:px-6 py-2 rounded-full hover:bg-gray-800 transition duration-300'>
             Explore More
