@@ -24,7 +24,7 @@ export default function RootLayout({
     <html lang="en">
       
       <body className={questrial.className}>
-      <NavBar/>
+ 
       {children}
       <Footer/>
       </body>

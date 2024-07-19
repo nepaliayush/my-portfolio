@@ -3,7 +3,7 @@ import Image from 'next/image';
 
 function Landing() {
   return (
-    <div className='flex flex-col md:flex-row h-[calc(100vh-80px)]'>
+    <div className="w-full h-full flex justify-center items-center">
       {/* Adjust height to account for NavBar */}
       {/* Left section for image */}
       <div className='w-full md:w-1/2 relative h-1/2 md:h-full'>
