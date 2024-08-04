@@ -10,7 +10,7 @@ const experiences: ExperienceItem[] = [
   {
     company: 'Talent Connects',
     position: 'Software Engineer Intern',
-    duration: 'March 2024 - June 2024',
+    duration: 'March 2024 - Present',
   },
   {
     company: 'Shakya Architects',
