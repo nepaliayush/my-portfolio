@@ -17,16 +17,23 @@ function Landing() {
       {/* Text section - full width on small screens, half width on md and up */}
       <div className='w-full md:w-1/2 flex flex-col justify-center items-center p-4 md:p-8'>
         <div className='max-w-md text-center'>
+
+       
+        
           <h1 className='text-3xl md:text-5xl font-bold text-gray-900 mb-2 md:mb-4 animate-fade-in-up'>
-            Hi&lsquo; I am Ayush Nepali
+              Hi&lsquo; I am  Ayush Nepali
           </h1>
           <p className='text-lg md:text-2xl text-gray-600 mb-4 md:mb-8 animate-fade-in-up delay-200'>
             Software Engineer
           </p>
-          <button className='bg-black text-white px-4 md:px-6 py-2 rounded-full hover:bg-gray-800 transition duration-300'>
-            Explore More !
-          </button>
+          
+
         </div>
+        <div className='mt-5'>
+          <svg className="animate-bounce w-6 h-6 "
+          xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="#000000" d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z"/>
+          </svg>
+          </div>
       </div>
     </div>
   );

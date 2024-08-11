@@ -84,6 +84,11 @@ function NavBar() {
             <ul className='flex flex-col items-center justify-center flex-grow'>
             <li  className='py-1 px-2'>
                  <Link href="/home">
+                  
+                </Link>
+              </li> 
+            <li  className='py-1 px-2'>
+                 <Link href="/home">
                   <p className='text-slate-900 text-xl hover:text-slate-800'>Home</p>
                 </Link>
               </li>
