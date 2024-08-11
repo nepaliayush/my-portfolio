@@ -34,7 +34,7 @@ const experiences: ExperienceItem[] = [
 const Experience: React.FC = () => {
   return (
     <div className="container mx-auto px-5 mt-5 space-y-10">
-      <h2 className="text-xl md:text-2xl font-bold text-center mb-6">Experience</h2>
+      <h2 className="text-xl md:text-2xl font-bold text-center mb-6">Professional Experience</h2>
       {experiences.map((exp, index) => (
         <div key={index} className="flex flex-col sm:flex-row justify-between mb-4 pb-4 border-b border-slate-900 last:border-b-0">
           <div>
