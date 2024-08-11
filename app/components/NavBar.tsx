@@ -32,7 +32,7 @@ function NavBar() {
   ];
 
   return (
-    <div className='container mx-auto '>
+    <div className='container mx-auto px-5'>
       <div className='bg-black mt-2 rounded-3xl'>
         <div className='flex justify-between items-center p-2'>
           <Link href='/'>

@@ -2,15 +2,14 @@ import React from 'react';
 
 function Contact() {
   return (
-    <div className='container mx-auto mt-5 bg-s'>
+    <div className='container mx-auto mt-5 px-5 '>
       <h1 className='text-2xl text-center font-semibold mb-5'>Contact Me</h1>
-      <div className='flex flex-col md:flex-row'>
+      <div className='flex flex-col md:flex-row space-y-8'>
         {/* Left section for social icons and text */}
-        <div className='w-full md:w-1/2 mx-auto'>
-          <p className='p-5 text-lg text-center mb-8 md:text-2xl'>
-            &quot; Let&apos;s connect &quot; Explore my portfolio and let&apos;s discuss how we can collaborate &quot;
+        <div className='w-full  mx-auto'>
+          <p className=' text-lg text-center mb-8 md:text-2xl'>
+            &quot; Let&apos;s connect &quot; Explore my portfolio and let&apos;s discuss how we can collaborate &quot;.
             <br />
-            Thank You
           </p>
 
           <div className='flex justify-center space-x-4 mb-8'>

@@ -2,7 +2,7 @@ import React from 'react';
 
 function AboutMe() {
     return (
-        <div className='container mx-auto mt-5'>
+        <div className='container mx-auto mt-5 px-5'>
             <h1 className='text-2xl text-center font-semibold mb-5'>About me</h1>
             <p className='px-2 text-justify text-xl'>
                 Hello! 👋 I&apos;m a  software engineer specializing in web development, particularly in crafting robust and efficient web applications. With [X years] of experience in web development, I&apos;ve become adept at building scalable solutions that meet client needs.
