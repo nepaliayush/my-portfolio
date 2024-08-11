@@ -5,25 +5,25 @@ import AboutMe from "./components/AboutMe";
 import Contact from "./components/Contact";
 import Experience from "./components/Experience";
 import Projects from "./components/Projects";
+import Footer from "./components/Footer";
 
 export default function Home() {
   return (
-    <main className="h-screen overflow-auto">
-      <section id="home" className="w-screen h-screen">
+    <main >
+      <section id="home"  className="h-screen">
         <Landing />
       </section>
-      <section id="projects" className="w-screen ">
-        <Projects />
-      </section>
-      <section id="about-me" className="w-screen ">
+
+      <section id="about-me"  >
         <AboutMe />
       </section>
-      <section id="experience" className="w-screen ">
+      <section id="experience" >
         <Experience />
       </section>
-      <section id="contact" className="w-screen ">
+      <section id="contact" >
         <Contact />
       </section>
+      
     </main>
   );
 }

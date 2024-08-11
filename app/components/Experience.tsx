@@ -8,9 +8,16 @@ interface ExperienceItem {
 
 const experiences: ExperienceItem[] = [
   {
+    
+    company: 'NCCS Software',
+    position: 'Software Engineer ',
+    duration: 'August 2024 - Present',
+  },
+  {
+
     company: 'Talent Connects',
     position: 'Software Engineer Intern',
-    duration: 'March 2024 - Present',
+    duration: 'March 2024 - July 2024',
   },
   {
     company: 'Shakya Architects',
