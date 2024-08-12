@@ -1,5 +1,5 @@
 'use client';
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useCallback } from 'react';
 
 interface CursorPosition {
   x: number;
@@ -8,28 +8,50 @@ interface CursorPosition {
 
 const CustomCursor: React.FC = () => {
   const [position, setPosition] = useState<CursorPosition>({ x: 0, y: 0 });
+  const [isVisible, setIsVisible] = useState(false);
+
+  const updateCursorPosition = useCallback((x: number, y: number) => {
+    setPosition({ x, y });
+    setIsVisible(true);
+  }, []);
+
+  const handleMouseMove = useCallback((e: MouseEvent) => {
+    updateCursorPosition(e.clientX, e.clientY);
+  }, [updateCursorPosition]);
+
+  const handleTouchMove = useCallback((e: TouchEvent) => {
+    if (e.touches.length > 0) {
+      const touch = e.touches[0];
+      updateCursorPosition(touch.clientX, touch.clientY);
+    }
+  }, [updateCursorPosition]);
+
+  const handleTouchEnd = useCallback(() => {
+    setIsVisible(false);
+  }, []);
 
   useEffect(() => {
-    const updateCursorPosition = (e: MouseEvent) => {
-      setPosition({ x: e.clientX, y: e.clientY });
-    };
-
     const disableCursor = () => {
       document.documentElement.style.cursor = 'none';
       document.body.style.cursor = 'none';
     };
 
-    window.addEventListener('mousemove', updateCursorPosition);
+    window.addEventListener('mousemove', handleMouseMove);
     window.addEventListener('mouseenter', disableCursor);
+    window.addEventListener('touchmove', handleTouchMove);
+    window.addEventListener('touchend', handleTouchEnd);
 
-    // Disable cursor on page load
     disableCursor();
 
     return () => {
-      window.removeEventListener('mousemove', updateCursorPosition);
+      window.removeEventListener('mousemove', handleMouseMove);
       window.removeEventListener('mouseenter', disableCursor);
+      window.removeEventListener('touchmove', handleTouchMove);
+      window.removeEventListener('touchend', handleTouchEnd);
     };
-  }, []);
+  }, [handleMouseMove, handleTouchMove, handleTouchEnd]);
+
+  if (!isVisible) return null;
 
   return (
     <div 
