@@ -23,3 +23,21 @@
   }
 }
 
+* {
+  cursor: none !important;
+}
+
+/* Disable cursor for links and buttons */
+a, button, input[type="submit"], input[type="button"], input[type="reset"] {
+  cursor: none !important;
+}
+
+/* Hide cursor when hovering over iframes or other embedded content */
+iframe {
+  pointer-events: none;
+}
+
+/* For WebKit browsers */
+::-webkit-cursor {
+  display: none;
+}
