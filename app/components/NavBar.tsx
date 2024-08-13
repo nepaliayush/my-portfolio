@@ -37,7 +37,7 @@ function NavBar() {
         <div className='flex justify-between items-center p-2'>
           <Link href='/home'>
          
-            <p className='text-white text-2xl font-bold  px-2'>AN</p>
+            <p className='text-white  text-xl md:text-2xl italic font-bold  px-2'>AN</p>
           </Link>
           <div className='md:hidden z-50'>
             <button
