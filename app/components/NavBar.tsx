@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
-
+import Image from 'next/image';
 function NavBar() {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -35,8 +35,9 @@ function NavBar() {
     <div className='container mx-auto px-5'>
       <div className='bg-black mt-2 rounded-3xl'>
         <div className='flex justify-between items-center p-2'>
-          <Link href='/'>
-            
+          <Link href='/home'>
+         
+            <p className='text-white text-2xl font-bold italic font-zedaya px-2'>AN</p>
           </Link>
           <div className='md:hidden z-50'>
             <button
